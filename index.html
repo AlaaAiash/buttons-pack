@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>100 Unique Buttons Pack - Live Preview</title>
   
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Fixed paths for GitHub -->
+  <!-- Buttons Pack CSS -->
   <link rel="stylesheet" href="source/css/buttons-core.css">
   <link rel="stylesheet" href="source/css/buttons.min.css">
   
+  <!-- Demo Page Styles -->
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     
@@ -96,7 +98,6 @@
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      cursor: pointer;
     }
     
     .copy-tooltip {
@@ -127,7 +128,12 @@
       padding: 30px 20px;
       font-size: 0.9rem;
     }
-
+    
+    .demo-footer a {
+      color: #818CF8;
+      text-decoration: none;
+    }
+    
     @media (max-width: 768px) {
       .demo-header h1 { font-size: 1.8rem; }
       .buttons-grid { gap: 10px; }
@@ -136,175 +142,486 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header class="demo-header">
     <h1>100 Unique Buttons Pack</h1>
     <p>Premium Collection of CSS3 Buttons - Ready for Production</p>
     <span class="badge">Version 1.0.0</span>
   </header>
 
+  <!-- Main Container -->
   <div class="demo-container">
 
-    <!-- Classic Buttons -->
+    <!-- Classic Buttons Section -->
     <section class="category-section">
       <h2 class="category-title">1. Classic Buttons (20)</h2>
       <p class="category-description">Traditional solid color buttons with various shapes and shadows.</p>
       <div class="buttons-grid">
-        <div class="button-wrapper"><button class="btn btn-cls-01">Classic 01</button><span class="button-label">.btn-cls-01</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-02">Classic 02</button><span class="button-label">.btn-cls-02</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-03">Classic 03</button><span class="button-label">.btn-cls-03</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-04">Classic 04</button><span class="button-label">.btn-cls-04</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-05">Classic 05</button><span class="button-label">.btn-cls-05</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-06">Classic 06</button><span class="button-label">.btn-cls-06</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-07">Classic 07</button><span class="button-label">.btn-cls-07</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-08">Classic 08</button><span class="button-label">.btn-cls-08</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-09">Classic 09</button><span class="button-label">.btn-cls-09</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-10">Classic 10</button><span class="button-label">.btn-cls-10</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-11">Classic 11</button><span class="button-label">.btn-cls-11</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-12">Classic 12</button><span class="button-label">.btn-cls-12</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-13">Classic 13</button><span class="button-label">.btn-cls-13</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-14">Classic 14</button><span class="button-label">.btn-cls-14</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-15">Classic 15</button><span class="button-label">.btn-cls-15</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-16">Classic 16</button><span class="button-label">.btn-cls-16</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-17">Classic 17</button><span class="button-label">.btn-cls-17</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-18">Classic 18</button><span class="button-label">.btn-cls-18</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-19">Classic 19</button><span class="button-label">.btn-cls-19</span></div>
-        <div class="button-wrapper"><button class="btn btn-cls-20">Classic 20</button><span class="button-label">.btn-cls-20</span></div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-01">Classic 01</button>
+          <span class="button-label">.btn-cls-01</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-02">Classic 02</button>
+          <span class="button-label">.btn-cls-02</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-03">Classic 03</button>
+          <span class="button-label">.btn-cls-03</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-04">Classic 04</button>
+          <span class="button-label">.btn-cls-04</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-05">Classic 05</button>
+          <span class="button-label">.btn-cls-05</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-06">Classic 06</button>
+          <span class="button-label">.btn-cls-06</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-07">Classic 07</button>
+          <span class="button-label">.btn-cls-07</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-08">Classic 08</button>
+          <span class="button-label">.btn-cls-08</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-09">Classic 09</button>
+          <span class="button-label">.btn-cls-09</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-10">Classic 10</button>
+          <span class="button-label">.btn-cls-10</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-11">Classic 11</button>
+          <span class="button-label">.btn-cls-11</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-12">Classic 12</button>
+          <span class="button-label">.btn-cls-12</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-13">Classic 13</button>
+          <span class="button-label">.btn-cls-13</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-14">Classic 14</button>
+          <span class="button-label">.btn-cls-14</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-15">Classic 15</button>
+          <span class="button-label">.btn-cls-15</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-16">Classic 16</button>
+          <span class="button-label">.btn-cls-16</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-17">Classic 17</button>
+          <span class="button-label">.btn-cls-17</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-18">Classic 18</button>
+          <span class="button-label">.btn-cls-18</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-19">Classic 19</button>
+          <span class="button-label">.btn-cls-19</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-cls-20">Classic 20</button>
+          <span class="button-label">.btn-cls-20</span>
+        </div>
       </div>
     </section>
 
-    <!-- Flat Buttons -->
+    <!-- Flat Buttons Section -->
     <section class="category-section">
       <h2 class="category-title">2. Flat & Modern Buttons (20)</h2>
       <p class="category-description">Clean, minimal flat design buttons with modern aesthetics.</p>
       <div class="buttons-grid">
-        <div class="button-wrapper"><button class="btn btn-flt-01">Flat 01</button><span class="button-label">.btn-flt-01</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-02">Flat 02 →</button><span class="button-label">.btn-flt-02</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-03">Flat 03</button><span class="button-label">.btn-flt-03</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-04">Flat 04</button><span class="button-label">.btn-flt-04</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-05">Flat 05</button><span class="button-label">.btn-flt-05</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-06">Flat 06</button><span class="button-label">.btn-flt-06</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-07">Flat 07</button><span class="button-label">.btn-flt-07</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-08">Flat 08</button><span class="button-label">.btn-flt-08</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-09">Flat 09</button><span class="button-label">.btn-flt-09</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-10">Flat 10</button><span class="button-label">.btn-flt-10</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-11">Flat 11</button><span class="button-label">.btn-flt-11</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-12">Flat 12</button><span class="button-label">.btn-flt-12</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-13">Flat 13</button><span class="button-label">.btn-flt-13</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-14">Flat 14</button><span class="button-label">.btn-flt-14</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-15">Flat 15</button><span class="button-label">.btn-flt-15</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-16">Flat 16</button><span class="button-label">.btn-flt-16</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-17">◊</button><span class="button-label">.btn-flt-17</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-18">Flat 18</button><span class="button-label">.btn-flt-18</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-19">Flat 19</button><span class="button-label">.btn-flt-19</span></div>
-        <div class="button-wrapper"><button class="btn btn-flt-20">FLAT 20</button><span class="button-label">.btn-flt-20</span></div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-01">Flat 01</button>
+          <span class="button-label">.btn-flt-01</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-02">Flat 02 →</button>
+          <span class="button-label">.btn-flt-02</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-03">Flat 03</button>
+          <span class="button-label">.btn-flt-03</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-04">Flat 04</button>
+          <span class="button-label">.btn-flt-04</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-05">Flat 05</button>
+          <span class="button-label">.btn-flt-05</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-06">Flat 06</button>
+          <span class="button-label">.btn-flt-06</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-07">Flat 07</button>
+          <span class="button-label">.btn-flt-07</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-08">Flat 08</button>
+          <span class="button-label">.btn-flt-08</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-09">Flat 09</button>
+          <span class="button-label">.btn-flt-09</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-10">Flat 10</button>
+          <span class="button-label">.btn-flt-10</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-11">Flat 11</button>
+          <span class="button-label">.btn-flt-11</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-12">Flat 12</button>
+          <span class="button-label">.btn-flt-12</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-13">Flat 13</button>
+          <span class="button-label">.btn-flt-13</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-14">Flat 14</button>
+          <span class="button-label">.btn-flt-14</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-15">Flat 15</button>
+          <span class="button-label">.btn-flt-15</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-16">Flat 16</button>
+          <span class="button-label">.btn-flt-16</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-17">◊</button>
+          <span class="button-label">.btn-flt-17</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-18">Flat 18</button>
+          <span class="button-label">.btn-flt-18</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-19">Flat 19</button>
+          <span class="button-label">.btn-flt-19</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-flt-20">FLAT 20</button>
+          <span class="button-label">.btn-flt-20</span>
+        </div>
       </div>
     </section>
 
-    <!-- Gradient Buttons -->
+    <!-- Gradient Buttons Section -->
     <section class="category-section">
       <h2 class="category-title">3. Gradient Buttons (20)</h2>
       <p class="category-description">Beautiful gradient buttons with various color combinations.</p>
       <div class="buttons-grid">
-        <div class="button-wrapper"><button class="btn btn-grd-01">Gradient 01</button><span class="button-label">.btn-grd-01</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-02">Gradient 02</button><span class="button-label">.btn-grd-02</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-03">Gradient 03</button><span class="button-label">.btn-grd-03</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-04">Gradient 04</button><span class="button-label">.btn-grd-04</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-05">Gradient 05</button><span class="button-label">.btn-grd-05</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-06">Gradient 06</button><span class="button-label">.btn-grd-06</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-07">Gradient 07</button><span class="button-label">.btn-grd-07</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-08">Gradient 08</button><span class="button-label">.btn-grd-08</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-09">GRADIENT 09</button><span class="button-label">.btn-grd-09</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-10">Gradient 10</button><span class="button-label">.btn-grd-10</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-11">Gradient 11</button><span class="button-label">.btn-grd-11</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-12">Gradient 12</button><span class="button-label">.btn-grd-12</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-13">Gradient 13</button><span class="button-label">.btn-grd-13</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-14">Gradient 14</button><span class="button-label">.btn-grd-14</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-15">Gradient 15</button><span class="button-label">.btn-grd-15</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-16">Gradient 16</button><span class="button-label">.btn-grd-16</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-17">Gradient 17</button><span class="button-label">.btn-grd-17</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-18">GRADIENT 18</button><span class="button-label">.btn-grd-18</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-19">Gradient 19</button><span class="button-label">.btn-grd-19</span></div>
-        <div class="button-wrapper"><button class="btn btn-grd-20">Gradient 20</button><span class="button-label">.btn-grd-20</span></div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-01">Gradient 01</button>
+          <span class="button-label">.btn-grd-01</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-02">Gradient 02</button>
+          <span class="button-label">.btn-grd-02</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-03">Gradient 03</button>
+          <span class="button-label">.btn-grd-03</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-04">Gradient 04</button>
+          <span class="button-label">.btn-grd-04</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-05">Gradient 05</button>
+          <span class="button-label">.btn-grd-05</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-06">Gradient 06</button>
+          <span class="button-label">.btn-grd-06</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-07">Gradient 07</button>
+          <span class="button-label">.btn-grd-07</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-08">Gradient 08</button>
+          <span class="button-label">.btn-grd-08</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-09">GRADIENT 09</button>
+          <span class="button-label">.btn-grd-09</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-10">Gradient 10</button>
+          <span class="button-label">.btn-grd-10</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-11">Gradient 11</button>
+          <span class="button-label">.btn-grd-11</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-12">Gradient 12</button>
+          <span class="button-label">.btn-grd-12</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-13">Gradient 13</button>
+          <span class="button-label">.btn-grd-13</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-14">Gradient 14</button>
+          <span class="button-label">.btn-grd-14</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-15">Gradient 15</button>
+          <span class="button-label">.btn-grd-15</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-16">Gradient 16</button>
+          <span class="button-label">.btn-grd-16</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-17">Gradient 17</button>
+          <span class="button-label">.btn-grd-17</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-18">GRADIENT 18</button>
+          <span class="button-label">.btn-grd-18</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-19">Gradient 19</button>
+          <span class="button-label">.btn-grd-19</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-grd-20">Gradient 20</button>
+          <span class="button-label">.btn-grd-20</span>
+        </div>
       </div>
     </section>
 
-    <!-- Outline Buttons -->
+    <!-- Outline Buttons Section -->
     <section class="category-section">
       <h2 class="category-title">4. Outline & Border Buttons (20)</h2>
       <p class="category-description">Creative outline and border-based button designs.</p>
       <div class="buttons-grid">
-        <div class="button-wrapper"><button class="btn btn-otl-01">Outline 01</button><span class="button-label">.btn-otl-01</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-02">Outline 02</button><span class="button-label">.btn-otl-02</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-03">Outline 03</button><span class="button-label">.btn-otl-03</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-04">Outline 04</button><span class="button-label">.btn-otl-04</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-05">Outline 05</button><span class="button-label">.btn-otl-05</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-06">Outline 06</button><span class="button-label">.btn-otl-06</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-07">Outline 07</button><span class="button-label">.btn-otl-07</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-08">Outline 08</button><span class="button-label">.btn-otl-08</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-09">Outline 09</button><span class="button-label">.btn-otl-09</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-10">Outline 10</button><span class="button-label">.btn-otl-10</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-11">Outline 11</button><span class="button-label">.btn-otl-11</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-12">Outline 12</button><span class="button-label">.btn-otl-12</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-13">Outline 13</button><span class="button-label">.btn-otl-13</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-14">Outline 14</button><span class="button-label">.btn-otl-14</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-15">Outline 15 →</button><span class="button-label">.btn-otl-15</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-16">Outline 16</button><span class="button-label">.btn-otl-16</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-17">Outline 17</button><span class="button-label">.btn-otl-17</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-18">Outline 18</button><span class="button-label">.btn-otl-18</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-19">Outline 19</button><span class="button-label">.btn-otl-19</span></div>
-        <div class="button-wrapper"><button class="btn btn-otl-20">Outline 20</button><span class="button-label">.btn-otl-20</span></div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-01">Outline 01</button>
+          <span class="button-label">.btn-otl-01</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-02">Outline 02</button>
+          <span class="button-label">.btn-otl-02</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-03">Outline 03</button>
+          <span class="button-label">.btn-otl-03</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-04">Outline 04</button>
+          <span class="button-label">.btn-otl-04</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-05">Outline 05</button>
+          <span class="button-label">.btn-otl-05</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-06">Outline 06</button>
+          <span class="button-label">.btn-otl-06</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-07">Outline 07</button>
+          <span class="button-label">.btn-otl-07</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-08">Outline 08</button>
+          <span class="button-label">.btn-otl-08</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-09">Outline 09</button>
+          <span class="button-label">.btn-otl-09</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-10">Outline 10</button>
+          <span class="button-label">.btn-otl-10</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-11">Outline 11</button>
+          <span class="button-label">.btn-otl-11</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-12">Outline 12</button>
+          <span class="button-label">.btn-otl-12</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-13">Outline 13</button>
+          <span class="button-label">.btn-otl-13</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-14">Outline 14</button>
+          <span class="button-label">.btn-otl-14</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-15">Outline 15 →</button>
+          <span class="button-label">.btn-otl-15</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-16">Outline 16</button>
+          <span class="button-label">.btn-otl-16</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-17">Outline 17</button>
+          <span class="button-label">.btn-otl-17</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-18">Outline 18</button>
+          <span class="button-label">.btn-otl-18</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-19">Outline 19</button>
+          <span class="button-label">.btn-otl-19</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-otl-20">Outline 20</button>
+          <span class="button-label">.btn-otl-20</span>
+        </div>
       </div>
     </section>
 
-    <!-- Special Buttons -->
+    <!-- Special Effects Buttons Section -->
     <section class="category-section">
       <h2 class="category-title">5. Special Effects Buttons (20)</h2>
       <p class="category-description">Advanced special effects including neon, glassmorphism, 3D, and more.</p>
       <div class="buttons-grid">
-        <div class="button-wrapper"><button class="btn btn-spc-01">Neon</button><span class="button-label">.btn-spc-01</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-02">Glass</button><span class="button-label">.btn-spc-02</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-03">Neumorph</button><span class="button-label">.btn-spc-03</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-04">Neumorph D</button><span class="button-label">.btn-spc-04</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-05">3D Push</button><span class="button-label">.btn-spc-05</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-06">MATERIAL</button><span class="button-label">.btn-spc-06</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-07">Shine</button><span class="button-label">.btn-spc-07</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-08">GLITCH</button><span class="button-label">.btn-spc-08</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-09 btn-magnetic">Magnetic</button><span class="button-label">.btn-spc-09</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-10">Liquid</button><span class="button-label">.btn-spc-10</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-11">PIXEL</button><span class="button-label">.btn-spc-11</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-12">Burning</button><span class="button-label">.btn-spc-12</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-13">Stitched</button><span class="button-label">.btn-spc-13</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-14 btn-tilt">Tilt 3D</button><span class="button-label">.btn-spc-14</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-15">Ink</button><span class="button-label">.btn-spc-15</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-16">Folding</button><span class="button-label">.btn-spc-16</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-17">Wobble</button><span class="button-label">.btn-spc-17</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-18">Electric</button><span class="button-label">.btn-spc-18</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-19">Bubbles</button><span class="button-label">.btn-spc-19</span></div>
-        <div class="button-wrapper"><button class="btn btn-spc-20">ENGRAVED</button><span class="button-label">.btn-spc-20</span></div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-01">Neon Glow</button>
+          <span class="button-label">.btn-spc-01</span>
+        </div>
+        <div class="button-wrapper" style="background: linear-gradient(135deg, #667EEA, #764BA2); padding: 10px; border-radius: 12px;">
+          <button class="btn btn-spc-02">Glassmorphism</button>
+          <span class="button-label">.btn-spc-02</span>
+        </div>
+        <div class="button-wrapper" style="background: #E8ECF1; padding: 10px; border-radius: 12px;">
+          <button class="btn btn-spc-03">Neumorphism</button>
+          <span class="button-label">.btn-spc-03</span>
+        </div>
+        <div class="button-wrapper" style="background: #1A202C; padding: 10px; border-radius: 12px;">
+          <button class="btn btn-spc-04">Neumorphism Dark</button>
+          <span class="button-label">.btn-spc-04</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-05">3D Push</button>
+          <span class="button-label">.btn-spc-05</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-06">MATERIAL</button>
+          <span class="button-label">.btn-spc-06</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-07">Shine Effect</button>
+          <span class="button-label">.btn-spc-07</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-08">GLITCH</button>
+          <span class="button-label">.btn-spc-08</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-09 btn-magnetic">Magnetic</button>
+          <span class="button-label">.btn-spc-09</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-10">Liquid Fill</button>
+          <span class="button-label">.btn-spc-10</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-11">PIXEL</button>
+          <span class="button-label">.btn-spc-11</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-12">Burning</button>
+          <span class="button-label">.btn-spc-12</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-13">Stitched</button>
+          <span class="button-label">.btn-spc-13</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-14 btn-tilt">Tilt 3D</button>
+          <span class="button-label">.btn-spc-14</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-15">Ink Splatter</button>
+          <span class="button-label">.btn-spc-15</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-16">Folding</button>
+          <span class="button-label">.btn-spc-16</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-17">Wobble</button>
+          <span class="button-label">.btn-spc-17</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-18">Electric</button>
+          <span class="button-label">.btn-spc-18</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-19">Bubbles</button>
+          <span class="button-label">.btn-spc-19</span>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn btn-spc-20">ENGRAVED</button>
+          <span class="button-label">.btn-spc-20</span>
+        </div>
       </div>
     </section>
 
   </div>
 
+  <!-- Footer -->
   <footer class="demo-footer">
-    <p>100 Unique Buttons Pack v1.0.0 | Premium CSS3 Collection</p>
+    <p>&copy; 2026 100 Unique Buttons Pack. All Rights Reserved. | <a href="../documentation/index.html">Documentation</a></p>
   </footer>
 
-  <div class="copy-tooltip" id="copyTooltip">Copied!</div>
+  <!-- Copy Tooltip -->
+  <div class="copy-tooltip" id="copyTooltip">Class name copied!</div>
 
+  <!-- Demo Script -->
   <script>
+    // Copy class name on button click
     document.querySelectorAll('.button-label').forEach(label => {
+      label.style.cursor = 'pointer';
       label.addEventListener('click', function() {
         const className = this.textContent.replace('.', '');
         navigator.clipboard.writeText(className).then(() => {
           const tooltip = document.getElementById('copyTooltip');
+          tooltip.textContent = `Copied: .${className}`;
           tooltip.classList.add('show');
-          setTimeout(() => tooltip.classList.remove('show'), 1500);
+          setTimeout(() => {
+            tooltip.classList.remove('show');
+          }, 1500);
         });
       });
     });
   </script>
 
+  <!-- Buttons Pack JavaScript -->
   <script src="source/js/buttons.min.js"></script>
 </body>
 </html>
