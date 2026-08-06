@@ -1,0 +1,259 @@
+/* ============================================
+   100 Unique Buttons Pack - Core Styles
+   Version: 1.0.0
+   Author: [Alaa Aiash]
+   License: Regular License (CodeCanyon)
+   Description: CSS variables, reset, and base
+                button foundation styles.
+   ============================================ */
+
+/* --------------------------------------------
+   1. CSS Custom Properties (Design Tokens)
+   -------------------------------------------- */
+:root {
+  /* Primary Color Palette */
+  --btn-primary: #4F46E5;
+  --btn-primary-hover: #4338CA;
+  --btn-primary-active: #3730A3;
+  --btn-primary-light: #EEF2FF;
+  
+  /* Secondary Color Palette */
+  --btn-secondary: #64748B;
+  --btn-secondary-hover: #475569;
+  --btn-secondary-active: #334155;
+  
+  /* Accent & Semantic Colors */
+  --btn-success: #10B981;
+  --btn-success-hover: #059669;
+  --btn-danger: #EF4444;
+  --btn-danger-hover: #DC2626;
+  --btn-warning: #F59E0B;
+  --btn-warning-hover: #D97706;
+  --btn-info: #3B82F6;
+  --btn-info-hover: #2563EB;
+  --btn-dark: #1E293B;
+  --btn-dark-hover: #0F172A;
+  --btn-light: #F8FAFC;
+  --btn-light-hover: #E2E8F0;
+  
+  /* Gradient Colors */
+  --gradient-1: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+  --gradient-2: linear-gradient(135deg, #F093FB 0%, #F5576C 100%);
+  --gradient-3: linear-gradient(135deg, #4FACFE 0%, #00F2FE 100%);
+  --gradient-4: linear-gradient(135deg, #43E97B 0%, #38F9D7 100%);
+  --gradient-5: linear-gradient(135deg, #FA709A 0%, #FEE140 100%);
+  --gradient-6: linear-gradient(135deg, #A18CD1 0%, #FBC2EB 100%);
+  --gradient-7: linear-gradient(135deg, #FCCB90 0%, #D57EEB 100%);
+  --gradient-8: linear-gradient(135deg, #E0C3FC 0%, #8EC5FC 100%);
+  --gradient-9: linear-gradient(135deg, #F761A1 0%, #8C1BAB 100%);
+  --gradient-10: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);
+  
+  /* Spacing Scale */
+  --btn-padding-xs: 6px 12px;
+  --btn-padding-sm: 8px 16px;
+  --btn-padding-md: 12px 24px;
+  --btn-padding-lg: 16px 32px;
+  --btn-padding-xl: 20px 40px;
+  
+  /* Font Size Scale */
+  --btn-font-xs: 12px;
+  --btn-font-sm: 14px;
+  --btn-font-md: 16px;
+  --btn-font-lg: 18px;
+  --btn-font-xl: 20px;
+  
+  /* Border Radius Scale */
+  --btn-radius-none: 0px;
+  --btn-radius-sm: 4px;
+  --btn-radius-md: 8px;
+  --btn-radius-lg: 12px;
+  --btn-radius-xl: 16px;
+  --btn-radius-pill: 50px;
+  --btn-radius-circle: 50%;
+  
+  /* Shadow Scale */
+  --btn-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --btn-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --btn-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --btn-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  
+  /* Transition Presets */
+  --btn-transition-fast: all 0.15s ease;
+  --btn-transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --btn-transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --btn-transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Z-Index Scale */
+  --btn-z-base: 1;
+  --btn-z-hover: 2;
+  --btn-z-active: 3;
+  
+  /* Border Width Scale */
+  --btn-border-thin: 1px;
+  --btn-border-md: 2px;
+  --btn-border-thick: 3px;
+}
+
+/* --------------------------------------------
+   2. Global Button Reset & Base
+   -------------------------------------------- */
+.btn {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  
+  /* Typography */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: var(--btn-font-md);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  text-align: center;
+  
+  /* Visual */
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  
+  /* Spacing */
+  padding: var(--btn-padding-md);
+  
+  /* Border Radius */
+  border-radius: var(--btn-radius-md);
+  
+  /* Transitions */
+  transition: var(--btn-transition-base);
+  
+  /* Interaction */
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  
+  /* Accessibility */
+  white-space: nowrap;
+  vertical-align: middle;
+  
+  /* Overflow */
+  overflow: hidden;
+}
+
+/* Button States - Base */
+.btn:hover {
+  transform: translateY(-1px);
+  z-index: var(--btn-z-hover);
+}
+
+.btn:active {
+  transform: translateY(0);
+  z-index: var(--btn-z-active);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--btn-primary);
+  outline-offset: 2px;
+}
+
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+  filter: grayscale(30%);
+}
+
+/* Button Icon Support */
+.btn .btn-icon {
+  display: inline-flex;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.btn .btn-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Button Size Variants */
+.btn-xs {
+  padding: var(--btn-padding-xs);
+  font-size: var(--btn-font-xs);
+  border-radius: var(--btn-radius-sm);
+}
+
+.btn-sm {
+  padding: var(--btn-padding-sm);
+  font-size: var(--btn-font-sm);
+  border-radius: var(--btn-radius-sm);
+}
+
+.btn-md {
+  padding: var(--btn-padding-md);
+  font-size: var(--btn-font-md);
+}
+
+.btn-lg {
+  padding: var(--btn-padding-lg);
+  font-size: var(--btn-font-lg);
+  border-radius: var(--btn-radius-lg);
+}
+
+.btn-xl {
+  padding: var(--btn-padding-xl);
+  font-size: var(--btn-font-xl);
+  border-radius: var(--btn-radius-xl);
+}
+
+/* Button Width Variants */
+.btn-block {
+  display: flex;
+  width: 100%;
+}
+
+.btn-wide {
+  min-width: 160px;
+}
+
+.btn-square {
+  padding: 12px;
+  aspect-ratio: 1;
+}
+
+.btn-circle {
+  padding: 12px;
+  border-radius: var(--btn-radius-circle);
+  aspect-ratio: 1;
+}
+
+/* RTL Support Ready */
+[dir="rtl"] .btn {
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .btn .btn-icon {
+  transform: scaleX(-1);
+}
+
+/* Print Styles */
+@media print {
+  .btn {
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    box-shadow: none;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+    animation: none;
+  }
+}
